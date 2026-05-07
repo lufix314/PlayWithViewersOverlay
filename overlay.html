@@ -22,9 +22,6 @@
         --viewer-padding: 6px 0;
         --viewer-text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
 
-        --empty-msg-font-size: 16px;
-        --empty-msg-opacity: 0.5;
-
         --slide-duration: 0.3s;
         --slide-stagger: 0.05s;
 
@@ -86,10 +83,9 @@
         }
       }
 
-      #empty-msg {
-        font-size: var(--empty-msg-font-size);
-        opacity: var(--empty-msg-opacity);
+      #no-connection {
         font-style: italic;
+        color: red;
       }
     </style>
   </head>
@@ -97,7 +93,7 @@
     <div id="queue-container">
       <div id="queue-header">Queue</div>
       <div id="queue-list">
-        <div id="empty-msg">No viewers in queue</div>
+        <div id="no-connection">Overlay Could not connect to Streamer.bot</div>
       </div>
     </div>
 
@@ -165,12 +161,12 @@
               if (resp && resp.variable && resp.variable.value) {
                 renderQueue(resp.variable.value);
               } else {
-                renderQueue('');
+                renderQueue("");
               }
             })
             .catch(function (err) {
               console.error("getGlobal error:", err.message);
-              renderQueue('');
+              renderQueue("");
             });
         },
       });
