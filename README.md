@@ -23,7 +23,7 @@ If you plan on using the overlay more often consider enabling **Auto Start** of 
 
 Import the provided `.sb` file into Streamer.bot to get everything you need:
 
-1. Open the file [here]().
+1. Open the file [here](https://raw.githubusercontent.com/lufix314/PlayWithViewersOverlay/refs/heads/main/bot.sb).
 2. Click **Import** in Streamer.bot
 3. Copy and Paste the contents of the `.sb` file into the text field
 4. Confirm the import
@@ -41,10 +41,10 @@ There are two ways to set up the overlay as a Browser Source in OBS.
 You can point OBS directly at the raw GitHub URL of `overlay.html` and pass configuration through URL search parameters. This is useful for testing, but comes with caveats.
 
 1. In OBS, add a new **Browser Source**.
-2. In the **URL** field, enter the raw GitHub URL with your settings as query parameters. For example:
+2. In the **URL** field, enter the following URL with your settings as query parameters. For example:
 
    ```
-   https://raw.githubusercontent.com/lufix314/PlayWithViewersOverlay/main/overlay.html?host=127.0.0.1&port=8080&endpoint=/&password=secret
+   https://lufix314.github.io/PlayWithViewersOverlay/overlay.html?host=127.0.0.1&port=8080&endpoint=/&password=secret
    ```
 
 3. Set the width and height and click **OK**.
@@ -56,7 +56,7 @@ You can point OBS directly at the raw GitHub URL of `overlay.html` and pass conf
 
 This method keeps your configuration on disk and avoids sending any credentials over the network.
 
-1. Download [`overlay.html`]() and [`config.js`]() from this repository and place them in the same directory.
+1. Download [`overlay.html`](https://github.com/lufix314/PlayWithViewersOverlay/blob/main/overlay.html) and [`config.js`](https://github.com/lufix314/PlayWithViewersOverlay/blob/main/config.js) from this repository and place them in the same directory.
 2. Edit `config.js` to match your Streamer.bot WebSocket settings:
 
    ```js
