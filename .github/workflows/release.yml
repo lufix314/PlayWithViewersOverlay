@@ -16,7 +16,7 @@ jobs:
 
       - name: Create zip archive
         run: |
-          zip -r release.zip . -x ".git/*" ".github/*"
+          zip -r play_with_viewers.zip . -x ".git/*" ".github/*"
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
