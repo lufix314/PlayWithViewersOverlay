@@ -1,3 +1,6 @@
+> [!warning]
+> This project was moved to [lufix314/StreamerbotTools](https://github.com/lufix314/StreamerbotTools).
+
 # Play with Viewers Queue Overlay
 
 [Streamer.bot](https://streamer.bot) actions and commands for managing a queue to play with viewers and an OBS browser source overlay that connects to Streamer.bot via WebSocket and displays the queue.
